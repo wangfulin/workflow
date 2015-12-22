@@ -17,6 +17,7 @@
   "author": "wangfulin",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer-loader": "^3.1.0",
     "css-loader": "^0.23.0",
     "file-loader": "^0.8.5",
     "less": "^2.5.3",

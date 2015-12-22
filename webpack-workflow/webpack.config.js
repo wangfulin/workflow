@@ -1,11 +1,10 @@
 module.exports = {
     // configuration
-    context: __dirname + '/src',
     entry: {
         bundle: './bundle.js'
     },
     output: {
-        path: __dirname + '/dist',
+        path: './dist',
  	filename: '[name].js'	
     },
     module: {
@@ -13,16 +12,19 @@ module.exports = {
 	    // loder less
 	    {
 		test: /\.less$/,
-		loader: 'style-loader!css-loader!less-loader'	
+		loader: 'style-loader!css-loader!less-loader!autoprefiexer'	
 	    },
 	    {
 		test: /\.css$/,
-		loader: 'style-loader!css-loader'
+		loader: 'style-loader!css-loader!autoprefixer'
 	    },
 	    {
-		test: /\.(png | jpg)$/,
+		test: /\.(png|jpg)$/,
 		loader: 'url-loader?limit=8192'
 	    }
 	]
+    },
+    resolve: {
+	extensions: ['', '.js', '.json', '.coffee']
     }
 };
