@@ -1,0 +1,29 @@
+{
+  "name": "webpack-workflow",
+  "version": "1.0.0",
+  "description": "This is a webpack based FE workflow to build,bundle,uglify,test...",
+  "main": "bundle.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/wangfulin"
+  },
+  "keywords": [
+    "webpack",
+    "workflow"
+  ],
+  "author": "wangfulin",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  }
+}
